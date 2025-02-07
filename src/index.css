@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
 }
 
@@ -25,41 +25,29 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+a:hover { text-decoration: underline; }
 
-.yellow {
-  color: #F4CE14;
-}
+.yellow { color: #F4CE14; }
 
-.white {
-  color: #FFF;
-}
+.white { color: #FFF; }
 
-.block {
-  display: block;
-}
+.bg-white { background-color: #FFF !important; }
 
-.inline-block {
-  display: inline-block;
-}
+.block { display: block; }
 
-.padding-lr-20 {
-  padding: 0 20px;
-}
+.inline-block { display: inline-block; }
 
-.margin-bottom-10 {
-  margin: 0 0 10px;
-}
+.padding-lr-20 { padding: 0 20px; }
 
-.margin-top-10 {
-  margin: 10px 0 0;
-}
+.padding-20 { padding: 20px !important; }
 
-.margin-lr-20 {
-  margin: 0 20px;
-}
+.margin-bottom-10 { margin: 0 0 10px; }
+
+.margin-top-10 { margin: 10px 0 0; }
+
+.margin-lr-20 { margin: 0 20px; }
+
+.margin-r-20 { margin-right: 20px; }
 
 .flex {
   display: flex;
@@ -67,9 +55,9 @@ a:hover {
   justify-content: space-between;
 }
 
-.b-radius-top-lr {
-  border-radius: 12px 12px 0 0;
-}
+.b-radius-top-lr { border-radius: 12px 12px 0 0; }
+
+.text-center { text-align: center; }
 
 /******** Container styles *********/
 .flex-container {
@@ -85,6 +73,10 @@ a:hover {
   align-items: center;
 }
 
+.flex-container.jc-start {
+  justify-content: start;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -92,6 +84,10 @@ a:hover {
   max-width: 960px;
   margin: 0 auto;
 }
+.grid-container.gc-col4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -174,6 +170,29 @@ nav li a, footer li a {
 
 .specials section:first-child {
   margin-bottom: 40px;
+}
+
+/******** Testimonial styles *********/
+.testimonials {
+  padding: 40px 0;
+  background-color: #495E57;
+}
+
+.testimonials h2 {
+  padding: 0 0 40px;
+}
+
+.testimonials img {
+  margin-right: 10px;
+}
+
+.testimonials p {
+  margin: 10px 0 0;
+}
+
+/******** About styles *********/
+.about {
+  padding: 40px 0;
 }
 
 /******** Footer styles *********/
