@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,4 +10,196 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 { font-size: 64px; }
+h2 { font-size: 40px; }
+h3 { font-size: 18px; }
+
+a {
+  color: #1787f7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.yellow {
+  color: #F4CE14;
+}
+
+.white {
+  color: #FFF;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.padding-lr-20 {
+  padding: 0 20px;
+}
+
+.margin-bottom-10 {
+  margin: 0 0 10px;
+}
+
+.margin-top-10 {
+  margin: 10px 0 0;
+}
+
+.margin-lr-20 {
+  margin: 0 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.b-radius-top-lr {
+  border-radius: 12px 12px 0 0;
+}
+
+/******** Container styles *********/
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex-container.center {
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/******** Button styles *********/
+.bttn {
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.bttn-primary {
+  background-color: #F4CE14;
+  color: #000;
+}
+
+.bttn-secondary {
+  background-color: #13241f;
+}
+
+.bttn-danger {
+  background-color: #C60000;
+}
+
+.card {
+  padding: 0 0 10px;
+  background-color: #EDEFEE;
+  overflow: hidden;
+}
+
+.card .price {
+  color: #EE9972;
+}
+
+/******** Header & Footer styles *********/
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+nav ul, footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav li a, footer li a {
+  color: #000;
+  text-decoration: none;
+}
+
+/******** Hero styles *********/
+.hero {
+  padding: 40px 0;
+  background-color: #495E57;
+}
+.hero p {
+  max-width: 400px;
+}
+
+/******** Specials styles *********/
+.specials {
+  padding: 40px 0;
+}
+
+.specials section:first-child {
+  margin-bottom: 40px;
+}
+
+/******** Footer styles *********/
+footer {
+  align-items: start;
+  padding: 30px 0;
+}
+
+footer h4 {
+  margin: 0 0 4px;
+}
+
+footer nav li, footer li {
+  display: block;
+  margin-left: 0;
+  margin-bottom: 4px;
+}
+
+footer li a {
+  color: #1787f7;
+}
+
+footer li a:hover {
+  text-decoration: underline;
+}
+
+footer li p {
+  margin: 0;
 }
