@@ -42,12 +42,15 @@ a:hover { text-decoration: underline; }
 .padding-20 { padding: 20px !important; }
 
 .margin-bottom-10 { margin: 0 0 10px; }
+.padding-bottom-10 { padding: 0 0 10px; }
 
 .margin-top-10 { margin: 10px 0 0; }
+.padding-top-10 { padding: 10px 0 0; }
 
 .margin-lr-20 { margin: 0 20px; }
 
 .margin-r-20 { margin-right: 20px; }
+.margin-l-20 { margin-left: 20px; }
 
 .flex {
   display: flex;
@@ -57,7 +60,13 @@ a:hover { text-decoration: underline; }
 
 .b-radius-top-lr { border-radius: 12px 12px 0 0; }
 
-.text-center { text-align: center; }
+.text-center { text-align: center;}
+.img-center {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+}
 
 /******** Container styles *********/
 .flex-container {
@@ -69,12 +78,20 @@ a:hover { text-decoration: underline; }
   margin: 0 auto;
 }
 
+.flex-container.fc-row {
+  flex-direction: row;
+}
+
 .flex-container.center {
   align-items: center;
 }
 
 .flex-container.jc-start {
   justify-content: start;
+}
+
+.flex-container.jc-center {
+  justify-content: center;
 }
 
 .grid-container {
@@ -104,6 +121,11 @@ a:hover { text-decoration: underline; }
   font-size: 16px;
   color: #fff;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.bttn:hover {
+  text-decoration: underline;
 }
 
 .bttn-primary {
@@ -112,7 +134,7 @@ a:hover { text-decoration: underline; }
 }
 
 .bttn-secondary {
-  background-color: #13241f;
+  background-color: #2d5448;
 }
 
 .bttn-danger {
@@ -193,6 +215,57 @@ nav li a, footer li a {
 /******** About styles *********/
 .about {
   padding: 40px 0;
+}
+
+/******** Booking styles *********/
+.booking {
+  padding: 40px 0;
+}
+
+form {
+  display: grid;
+  width: 100%;
+  max-width: 300px;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+form .required {
+  color: #c60000;
+}
+
+form input, form select {
+  margin: 0 0 20px;
+}
+
+.field-error {
+  box-shadow: 0 0 8px#c60000;
+  margin-bottom: 6px;
+}
+
+.field-error-msg {
+  color: #c60000;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+dl {
+  display: grid;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 20px;
 }
 
 /******** Footer styles *********/

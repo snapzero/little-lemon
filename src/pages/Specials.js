@@ -1,8 +1,8 @@
-import Button from './Button';
-import SpecialCard from './SpecialCard';
-import GreekSalad from './assets/greek-salad.jpg';
-import Bruchetta from './assets/bruchetta.svg';
-import LemonDessert from './assets/lemon-dessert.jpg';
+import Button from '../components/Button';
+import SpecialCard from '../components/SpecialCard';
+import GreekSalad from '../assets/greek-salad.jpg';
+import Bruchetta from '../assets/bruchetta.svg';
+import LemonDessert from '../assets/lemon-dessert.jpg';
 
 const specials = [
   {
@@ -33,7 +33,7 @@ function Specials() {
       <div className="specials">
         <section className="flex-container center">
           <h2>This weeks specials!</h2>
-          <Button type="button" text="Online menu" variant="primary" />
+          <Button type="button" text="View our reviews" variant="primary" route="/testimonials" />
         </section>
         <section className="grid-container">
           {specials.map(special => (

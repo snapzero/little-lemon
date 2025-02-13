@@ -1,11 +1,11 @@
 import Nav from './Nav';
-import logo from './assets/Logo.svg';
+import logo from '../assets/Logo.svg';
 
 function Footer() {
     return (
       <>
         <footer>
-          <div class="flex-container">
+          <div className="flex-container">
             <img src={logo} alt="Little Lemon Logo" />
             <section>
               <h4>Site Links</h4>

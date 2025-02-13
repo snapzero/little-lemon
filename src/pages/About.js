@@ -1,11 +1,11 @@
-import OwnersImage from './assets/Mario-and-Adrian-A.jpg';
+import OwnersImage from '../assets/Mario-and-Adrian-A.jpg';
 
 function About() {
     return (
       <div className="about" id="about">
         <article className="flex-container center">
           <section>
-            <h1 class="yellow">Little Lemon</h1>
+            <h1 className="yellow">Little Lemon</h1>
             <h2>Chicago</h2>
             <p className="margin-r-20">
               Little Lemon is a family-owned and operated restaurant that specializes in Mediterranean cuisine. We have been serving up delicious and authentic Mediterranean dishes for over 20 years, and we have become a favorite among locals and visitors alike.
@@ -16,7 +16,7 @@ function About() {
           </p>
           </section>
           <section>
-            <img src={OwnersImage} width="400" />
+            <img src={OwnersImage} width="400" alt="Restaurant owners" />
           </section>
         </article>
       </div>

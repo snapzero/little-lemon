@@ -1,8 +1,8 @@
-import TestimonialCard from './TestimonialCard';
-import Person1 from './assets/person1.jpeg';
-import Person2 from './assets/person2.jpeg';
-import Person3 from './assets/person3.jpg';
-import Person4 from './assets/person4.jpeg';
+import TestimonialCard from '../components/TestimonialCard';
+import Person1 from '../assets/person1.jpeg';
+import Person2 from '../assets/person2.jpeg';
+import Person3 from '../assets/person3.jpg';
+import Person4 from '../assets/person4.jpeg';
 
 const reviews = [
   {
