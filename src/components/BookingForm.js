@@ -66,7 +66,7 @@ function BookingForm(props) {
   }
 
   return (
-    <form className="bookingForm" onSubmit={handleSubmit}>
+    <form className="bookingForm" onSubmit={handleSubmit} aria-label="Make a reservation">
       <label htmlFor="date">Choose date <span className="required">*</span></label>
       <input
         type="date"
@@ -115,7 +115,7 @@ function BookingForm(props) {
           <option>Birthday</option>
           <option>Anniversary</option>
       </select>
-      <Button type="submit" variant="primary" text="Make your reservation" />
+      <Button type="submit" variant="primary" text="Make your reservation" aria-label="Submit reservation details" />
     </form>
   );
 }

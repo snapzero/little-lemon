@@ -33,7 +33,7 @@ function Specials() {
       <div className="specials">
         <section className="flex-container center">
           <h2>This weeks specials!</h2>
-          <Button type="button" text="View our reviews" variant="primary" route="/testimonials" />
+          <Button aria-label="Click to see reviews" type="button" text="View our reviews" variant="primary" route="/testimonials" />
         </section>
         <section className="grid-container">
           {specials.map(special => (

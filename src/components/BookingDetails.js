@@ -76,11 +76,13 @@ function BookingDetails() {
                         </dl>
                         <div>
                             <Button
+                                aria-label="Click to go back"
                                 type="button"
                                 variant="secondary"
                                 text="Go back"
                                 handleClick={handleBack} />
                             <Button
+                                aria-label="Click to confirm"
                                 type="button"
                                 variant="primary margin-l-20"
                                 text="Confirm"

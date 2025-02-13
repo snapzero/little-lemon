@@ -8,7 +8,7 @@ function ConfirmedBooking() {
         <p className="margin-bottom-10 padding-bottom-10 text-center">Your reservation has been made.</p>
         <img className="img-center" src={Confirmed} style={{maxWidth: '300px'}} alt="Confirmed" />
         <div className="flex-container jc-center">
-            <Button route="/" variant="primary" text="View our menu" />
+            <Button aria-label="Click to viw menu" route="/" variant="primary" text="View our menu" />
         </div>
     </section>
     );

@@ -26,11 +26,11 @@ test('it renders a link element', () => {
 });
 
 test('it renders a button element', () => {
-    render(<Button type={type} text={text} variant={variant} />);
+  render(<Button type={type} text={text} variant={variant} />);
 
-    const bttn = screen.getByRole('button');
-    const bttnTypeValue = bttn.getAttribute('type');
-    expect(bttn.textContent).toBe('Some text');
-    expect(bttnTypeValue).toBe('submit');
-    expect(bttn).toBeInTheDocument();
-  });
+  const bttn = screen.getByRole('button');
+  const bttnTypeValue = bttn.getAttribute('type');
+  expect(bttn.textContent).toBe('Some text');
+  expect(bttnTypeValue).toBe('submit');
+  expect(bttn).toBeInTheDocument();
+});
