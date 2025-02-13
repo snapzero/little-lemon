@@ -68,6 +68,43 @@ test('displays error message if date input has no value on blur', () => {
   expect(errorMessage).toBeInTheDocument();
 });
 
+test('displays error message if guests is not valid on submit', () => {
+  const handleSubmit = jest.fn();
+  render(<BookingForm timeOptions={timeOptions} dispatch={dispatch} onSubmit={handleSubmit} />);
+
+  const button = screen.getByRole('button');
+  const guestsInput = screen.getByLabelText('Number of guests', {exact: false});
+
+  fireEvent.change(guestsInput, { target: { value: '' } });
+  fireEvent.submit(button);
+
+  const errorMessage1 = screen.getByText('Guests must be 1 to 10');
+  expect(errorMessage1).toBeInTheDocument();
+
+  fireEvent.change(guestsInput, { target: { value: '0' } });
+  fireEvent.submit(button);
+
+  const errorMessage2 = screen.getByText('Guests must be 1 to 10');
+  expect(errorMessage2).toBeInTheDocument();
+
+  fireEvent.change(guestsInput, { target: { value: '11' } });
+  fireEvent.submit(button);
+
+  const errorMessage3 = screen.getByText('Guests must be 1 to 10');
+  expect(errorMessage3).toBeInTheDocument();
+});
+
+test('displays error message if guests is not valid on blur', () => {
+  render(<BookingForm timeOptions={timeOptions} dispatch={dispatch} />);
+  const guestsInput = screen.getByLabelText('Number of guests', {exact: false});
+
+  fireEvent.change(guestsInput, { target: { value: '' } });
+  fireEvent.blur(guestsInput);
+
+  const errorMessage = screen.getByText('Guests must be 1 to 10');
+  expect(errorMessage).toBeInTheDocument();
+});
+
 test('form fields update correctly', () => {
   render(<BookingForm timeOptions={timeOptions} dispatch={dispatch} />);
   const dateInput = screen.getByLabelText('Choose date', {exact: false});
